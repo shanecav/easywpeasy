@@ -1,0 +1,32 @@
+# I use Beanstalk for deployment, so I use this file (for reference)
+# to create an ignore list on my deployments.
+
+# Self
+.deployignore
+
+# WP-CLI
+db-sync
+sql-dump-*.sql
+wp-cli.local.yml
+ 
+# Vendor (e.g. Composer)
+vendor
+ 
+# Composer stuff
+scripts
+composer.json
+composer.lock
+ 
+# Roots stuff
+wp-content/themes/*/.editorconfig
+wp-content/themes/*/.jshintrc
+wp-content/themes/*/CHANGELOG.md
+wp-content/themes/*/CONTRIBUTING.md
+wp-content/themes/*/Gruntfile.js
+wp-content/themes/*/LICENSE.md
+wp-content/themes/*/package.json
+wp-content/themes/*/README.md
+wp-content/themes/*/node_modules
+ 
+# Misc
+README.md

@@ -1,0 +1,4 @@
+# To make wp-cli work with the 'wp' command, add the following line to your .bash_profile:
+# alias wp="./vendor/bin/wp"
+path: wp
+url: http://local.bedrocktest.com/wp

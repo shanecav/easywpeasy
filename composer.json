@@ -1,0 +1,53 @@
+{
+  "autoload": {
+    "psr-0": {"Easywpeasy\\Installer": "scripts"}
+  },
+  "scripts": {
+    "post-install-cmd": ["Easywpeasy\\Installer::addSalts"]
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "wordpress",
+        "type": "webroot",
+        "version": "3.8.1",
+        "dist": {
+          "type": "zip",
+          "url": "https://github.com/WordPress/WordPress/archive/3.8.1.zip"
+        },
+        "require": {
+          "fancyguy/webroot-installer": "1.1.0"
+        }
+      }
+    }
+  ],
+  "require": {
+    "php": ">=5.3.2",
+    "wordpress": "3.8.1",
+    "fancyguy/webroot-installer": "1.1.0",
+    "composer/installers": "v1.0.6",
+    "wp-cli/wp-cli": "v0.13.0",
+    "wpackagist/advanced-custom-fields": "*",
+    "wpackagist/admin-menu-tree-page-view": "*",
+    "wpackagist/custom-post-type-ui": "*",
+    "wpackagist/easy-bootstrap-shortcodes": "*",
+    "wpackagist/post-types-order": "*",
+    "wpackagist/simple-page-ordering": "*",
+    "wpackagist/posts-to-posts": "*",
+    "wpackagist/backupwordpress": "*"
+  },
+  "extra": {
+    "installer-paths": {
+      "wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+      "wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "wp-content/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "webroot-dir": "wp",
+    "webroot-package": "wordpress"
+  }
+}

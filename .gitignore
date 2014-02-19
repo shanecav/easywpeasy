@@ -1,0 +1,17 @@
+# WordPress
+wp
+
+# WP-CLI
+db-sync
+sql-dump-*.sql
+
+# Application
+wp-content/plugins/*
+!wp-content/plugins/index.php
+wp-content/upgrade
+uploads/*
+!uploads/.gitkeep
+
+# Vendor (e.g. Composer)
+vendor/*
+!vendor/.gitkeep
