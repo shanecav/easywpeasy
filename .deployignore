@@ -1,5 +1,7 @@
-# I use Beanstalk for deployment, so I use this file (for reference)
-# to create an ignore list on my deployments.
+# This file doesn't actually do anything. I made it because
+# I use Beanstalk for deployment, so I use this file (for
+# reference only) to create an ignore list on my deployments.
+# If this doesn't apply to you, you can ignore or delete it.
 
 # Self
 .deployignore
