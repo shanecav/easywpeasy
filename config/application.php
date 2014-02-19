@@ -63,7 +63,7 @@ define('WPLANG', '');
  * not choose to automatically generate these, then this file will be empty. In that case, 
  * you'll need to manually copy+paste the keys from the following link:
  * {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}
- * into the "config/satls.php" file.
+ * into the "config/salts.php" file.
  */
 require_once(dirname(__FILE__) . '/salts.php');
 
