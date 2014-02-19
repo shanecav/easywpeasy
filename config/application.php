@@ -58,7 +58,11 @@ $table_prefix = 'wp_';
 define('WPLANG', '');
 
 /**
- * Authentication Unique Keys and Salts
+ * Authentication Unique Keys and Salts - If you chose to automatically generate these
+ * during the initial 'composer install', then you don't need to do anything. If you did
+ * not choose to automatically generate these, then this file will be empty. In that case, 
+ * you'll need to manually copy+paste from:
+ * {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}
  */
 require_once(dirname(__FILE__) . '/salts.php');
 
