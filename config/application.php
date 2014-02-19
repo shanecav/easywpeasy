@@ -61,8 +61,9 @@ define('WPLANG', '');
  * Authentication Unique Keys and Salts - If you chose to automatically generate these
  * during the initial 'composer install', then you don't need to do anything. If you did
  * not choose to automatically generate these, then this file will be empty. In that case, 
- * you'll need to manually copy+paste from:
+ * you'll need to manually copy+paste the keys from the following link:
  * {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}
+ * into the "config/satls.php" file.
  */
 require_once(dirname(__FILE__) . '/salts.php');
 
