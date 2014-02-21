@@ -32,14 +32,14 @@
     "fancyguy/webroot-installer": "1.1.0",
     "composer/installers": "v1.0.6",
     "wp-cli/wp-cli": "v0.13.0",
-    "wpackagist/advanced-custom-fields": "*",
-    "wpackagist/admin-menu-tree-page-view": "*",
-    "wpackagist/custom-post-type-ui": "*",
-    "wpackagist/easy-bootstrap-shortcodes": "*",
-    "wpackagist/post-types-order": "*",
-    "wpackagist/simple-page-ordering": "*",
-    "wpackagist/posts-to-posts": "*",
-    "wpackagist/backupwordpress": "*"
+    "wpackagist-plugin/advanced-custom-fields": "*",
+    "wpackagist-plugin/admin-menu-tree-page-view": "*",
+    "wpackagist-plugin/custom-post-type-ui": "*",
+    "wpackagist-plugin/easy-bootstrap-shortcodes": "*",
+    "wpackagist-plugin/post-types-order": "*",
+    "wpackagist-plugin/simple-page-ordering": "*",
+    "wpackagist-plugin/posts-to-posts": "*",
+    "wpackagist-plugin/backupwordpress": "*"
   },
   "extra": {
     "installer-paths": {

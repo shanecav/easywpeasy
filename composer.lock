@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "35b95dbd048da1ffdd2aefdc87ca0910",
+    "hash": "f3510edc63f9ac5bfbbd48fa284c9b1f",
     "packages": [
         {
             "name": "composer/installers",
@@ -46,7 +46,7 @@
                 {
                     "name": "Kyle Robinson Young",
                     "email": "kyle@dontkry.com",
-                    "homepage": "http://dontkry.com",
+                    "homepage": "https://github.com/shama",
                     "role": "Developer"
                 }
             ],
@@ -412,7 +412,7 @@
             "time": "2013-11-30 13:14:44"
         },
         {
-            "name": "wpackagist/admin-menu-tree-page-view",
+            "name": "wpackagist-plugin/admin-menu-tree-page-view",
             "version": "2.6.8",
             "source": {
                 "type": "svn",
@@ -428,31 +428,37 @@
             "require": {
                 "composer/installers": "~1.0"
             },
+            "replace": {
+                "wpackagist/admin-menu-tree-page-view": "self.version"
+            },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/extend/plugins/admin-menu-tree-page-view"
+            "homepage": "http://wordpress.org/plugins/admin-menu-tree-page-view/"
         },
         {
-            "name": "wpackagist/advanced-custom-fields",
-            "version": "4.3.3",
+            "name": "wpackagist-plugin/advanced-custom-fields",
+            "version": "4.3.4",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/advanced-custom-fields/",
-                "reference": "tags/4.3.3"
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/advanced-custom-fields.4.3.3.zip",
+                "url": "http://downloads.wordpress.org/plugin/advanced-custom-fields.zip",
                 "reference": null,
                 "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"
             },
+            "replace": {
+                "wpackagist/advanced-custom-fields": "self.version"
+            },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/extend/plugins/advanced-custom-fields"
+            "homepage": "http://wordpress.org/plugins/advanced-custom-fields/"
         },
         {
-            "name": "wpackagist/backupwordpress",
+            "name": "wpackagist-plugin/backupwordpress",
             "version": "2.5",
             "source": {
                 "type": "svn",
@@ -468,11 +474,14 @@
             "require": {
                 "composer/installers": "~1.0"
             },
+            "replace": {
+                "wpackagist/backupwordpress": "self.version"
+            },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/extend/plugins/backupwordpress"
+            "homepage": "http://wordpress.org/plugins/backupwordpress/"
         },
         {
-            "name": "wpackagist/custom-post-type-ui",
+            "name": "wpackagist-plugin/custom-post-type-ui",
             "version": "0.8.2",
             "source": {
                 "type": "svn",
@@ -488,11 +497,14 @@
             "require": {
                 "composer/installers": "~1.0"
             },
+            "replace": {
+                "wpackagist/custom-post-type-ui": "self.version"
+            },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/extend/plugins/custom-post-type-ui"
+            "homepage": "http://wordpress.org/plugins/custom-post-type-ui/"
         },
         {
-            "name": "wpackagist/easy-bootstrap-shortcodes",
+            "name": "wpackagist-plugin/easy-bootstrap-shortcodes",
             "version": "3.7",
             "source": {
                 "type": "svn",
@@ -508,31 +520,37 @@
             "require": {
                 "composer/installers": "~1.0"
             },
+            "replace": {
+                "wpackagist/easy-bootstrap-shortcodes": "self.version"
+            },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/extend/plugins/easy-bootstrap-shortcodes"
+            "homepage": "http://wordpress.org/plugins/easy-bootstrap-shortcodes/"
         },
         {
-            "name": "wpackagist/post-types-order",
-            "version": "1.6.2",
+            "name": "wpackagist-plugin/post-types-order",
+            "version": "1.6.5",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/post-types-order/",
-                "reference": "tags/1.6.2"
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/post-types-order.1.6.2.zip",
+                "url": "http://downloads.wordpress.org/plugin/post-types-order.zip",
                 "reference": null,
                 "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"
             },
+            "replace": {
+                "wpackagist/post-types-order": "self.version"
+            },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/extend/plugins/post-types-order"
+            "homepage": "http://wordpress.org/plugins/post-types-order/"
         },
         {
-            "name": "wpackagist/posts-to-posts",
+            "name": "wpackagist-plugin/posts-to-posts",
             "version": "1.6.2",
             "source": {
                 "type": "svn",
@@ -548,11 +566,14 @@
             "require": {
                 "composer/installers": "~1.0"
             },
+            "replace": {
+                "wpackagist/posts-to-posts": "self.version"
+            },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/extend/plugins/posts-to-posts"
+            "homepage": "http://wordpress.org/plugins/posts-to-posts/"
         },
         {
-            "name": "wpackagist/simple-page-ordering",
+            "name": "wpackagist-plugin/simple-page-ordering",
             "version": "2.1.2",
             "source": {
                 "type": "svn",
@@ -568,8 +589,11 @@
             "require": {
                 "composer/installers": "~1.0"
             },
+            "replace": {
+                "wpackagist/simple-page-ordering": "self.version"
+            },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/extend/plugins/simple-page-ordering"
+            "homepage": "http://wordpress.org/plugins/simple-page-ordering/"
         }
     ],
     "packages-dev": [
