@@ -1,4 +1,9 @@
 <?php
+/**
+* Don't edit the four variables below. If you want to edit the WP_HOME or
+* WP_SITEURL constants, do so in the individual environment settings (found
+* in /config/environments/).
+*/
 $root_dir = dirname(dirname(__FILE__));
 $server_name = $_SERVER['SERVER_NAME'];
 $wp_home = 'http://' . $server_name;
