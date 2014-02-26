@@ -89,6 +89,7 @@ If you want, you can install wp-cli in your other environments, too. You'll have
 I have the following plugins included in the composer.json file, because I use them on pretty much everything:
 
 - advanced-custom-fields
+- wordpress-seo
 - admin-menu-tree-page-view
 - custom-post-type-ui
 - easy-bootstrap-shortcodes
@@ -96,6 +97,8 @@ I have the following plugins included in the composer.json file, because I use t
 - simple-page-ordering
 - posts-to-posts
 - backupwordpress
+- be-subpages-widget
+- better-menu-widget
 
 If you want to remove or add any, just edit the composer.json before you run `composer install`.
 

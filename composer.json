@@ -33,13 +33,16 @@
     "composer/installers": "v1.0.6",
     "wp-cli/wp-cli": "v0.13.0",
     "wpackagist-plugin/advanced-custom-fields": "*",
+    "wpackagist-plugin/wordpress-seo": "*",
     "wpackagist-plugin/admin-menu-tree-page-view": "*",
     "wpackagist-plugin/custom-post-type-ui": "*",
     "wpackagist-plugin/easy-bootstrap-shortcodes": "*",
     "wpackagist-plugin/post-types-order": "*",
     "wpackagist-plugin/simple-page-ordering": "*",
     "wpackagist-plugin/posts-to-posts": "*",
-    "wpackagist-plugin/backupwordpress": "*"
+    "wpackagist-plugin/backupwordpress": "*",
+    "wpackagist-plugin/be-subpages-widget": "*",
+    "wpackagist-plugin/better-menu-widget": "*"
   },
   "extra": {
     "installer-paths": {

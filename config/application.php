@@ -78,7 +78,6 @@ require_once(dirname(__FILE__) . '/salts.php');
 // define('AUTOMATIC_UPDATER_DISABLED', true);
 // define('DISABLE_WP_CRON', true);
 // define('DISALLOW_FILE_EDIT', true);
-define( 'UPLOADS', '/uploads' );
 
 /**
  * Bootstrap WordPress

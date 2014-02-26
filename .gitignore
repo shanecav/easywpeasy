@@ -9,8 +9,8 @@ sql-dump-*.sql
 wp-content/plugins/*
 !wp-content/plugins/index.php
 wp-content/upgrade
-uploads/*
-!uploads/.gitkeep
+wp-content/uploads/*
+!wp-content/uploads/.gitkeep
 
 # Vendor (e.g. Composer)
 vendor/*
