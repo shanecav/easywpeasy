@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "9dcb95169008d640f3a8572895acbaed",
+    "hash": "137fe51a2cc67f5c16194e5d41b9d09d",
     "packages": [
         {
             "name": "composer/installers",
@@ -252,6 +252,20 @@
                 "sockets"
             ],
             "time": "2013-10-06 13:30:32"
+        },
+        {
+            "name": "shanecav/roots",
+            "version": "1.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/shanecav/roots/archive/1.0.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-theme"
         },
         {
             "name": "symfony/finder",
