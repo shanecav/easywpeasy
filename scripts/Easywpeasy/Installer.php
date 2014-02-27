@@ -66,7 +66,7 @@ class Installer {
       $generate_local_env = $io->askConfirmation('<info>Would you like to enter the database connection information for your local environment now? </info> [<comment>Y,n</comment>]? ', true);
       if($generate_local_env) {
           foreach (self::$DB_CONFIG as $db_key => $db_value) {
-            $local_db_value = $io->ask('<info>'.$db_key.'</info>', $db_value);
+            $local_db_value = $io->ask('<info>'.$db_key.': </info>', $db_value);
             $file_contents = file_get_contents($local_env_file_path);
             $file_contents = str_replace($db_value, $local_db_value, $file_contents);
             file_put_contents($local_env_file_path, $file_contents);
