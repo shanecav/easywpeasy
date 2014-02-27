@@ -1,9 +1,30 @@
 {
+  "name": "shanecav/easywpeasy",
+  "type": "project",
+  "license": "MIT",
+  "description": "An easy, portable WordPress skeleton using Composer.",
+  "homepage": "https://github.com/shanecav/easywpeasy",
+  "authors": [
+    {
+      "name": "Shane Cavaliere",
+      "email": "hello@shanecavaliere.com",
+      "homepage": "http://shanecavaliere.com"
+    }
+  ],
+  "keywords": [
+    "wordpress", "composer", "wp"
+  ],
+  "support": {
+    "issues": "https://github.com/shanecav/easywpeasy/issues"
+  },
+  "config": {
+    "generate-salts": true
+  },
   "autoload": {
     "psr-0": {"Easywpeasy\\Installer": "scripts"}
   },
   "scripts": {
-    "post-install-cmd": ["Easywpeasy\\Installer::addSalts"]
+    "post-root-package-install": ["Easywpeasy\\Installer::addSalts"]
   },
   "repositories": [
     {
