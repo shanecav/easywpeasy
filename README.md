@@ -23,7 +23,7 @@ Simply run `composer create-project shanecav/easywpeasy path/to/your/project`. T
 1. It will ask if you'd like to automatically generate keys and salts for your config. Unless you have some reason you'd like to enter those manually, you should just choose yes. If you choose no, an empty file will be created at config/salts.php and you'll need to populate that file with the appropriate constant definitions (e.g. [https://api.wordpress.org/secret-key/1.1/salt/](https://api.wordpress.org/secret-key/1.1/salt/)).
 2. It will then ask you if you'd like to set the database connection information for your local environment. If you choose yes, you will be prompted to enter the database name, user name, user password, and database host. Otherwise, you can set this information manually in config/environments/local.php.
 
-Pro tip: If you chose yes on both of the above prompts, are using wp-cli (explained below), and entered a username & password for an existing local MySQL user with global priveleges in the above prompt, you can now `cd` into your project's root, run `wp db create`, and you'll be all set to visit yourprojectslocaldomain.com/wp/wp-admin/install.php. Easy!
+Pro tip: If you chose yes on both of the above prompts, are using wp-cli (explained below), and entered a username & password for an existing local MySQL user with global priveleges in the above prompt, you can now `cd` into your project's root, run `wp db create`, and you'll be all set to visit yourprojectslocaldomain.com/wp/wp-admin/install.php. That's a fresh WordPress install in three quick commands!
 
 # Configuration
 
