@@ -8,7 +8,8 @@ sql-dump-*.sql
 # Application
 wp-content/plugins/*
 !wp-content/plugins/index.php
-wp-content/upgrade
+wp-content/themes/roots*/
+wp-content/upgrade/
 wp-content/uploads/*
 !wp-content/uploads/.gitkeep
 

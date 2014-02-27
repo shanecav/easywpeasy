@@ -48,6 +48,21 @@
           "fancyguy/webroot-installer": "1.1.0"
         }
       }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "shanecav/roots",
+        "type": "wordpress-theme",
+        "version": "1.0.0",
+        "dist": {
+          "type": "zip",
+          "url": "https://github.com/shanecav/roots/archive/1.0.0.zip"
+        },
+        "require": {
+          "composer/installers": "~1.0"
+        }
+      }
     }
   ],
   "require": {
@@ -66,7 +81,8 @@
     "wpackagist-plugin/posts-to-posts": "*",
     "wpackagist-plugin/backupwordpress": "*",
     "wpackagist-plugin/be-subpages-widget": "*",
-    "wpackagist-plugin/better-menu-widget": "*"
+    "wpackagist-plugin/better-menu-widget": "*",
+    "shanecav/roots": "1.0.0"
   },
   "extra": {
     "installer-paths": {
