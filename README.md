@@ -18,17 +18,10 @@ If you're not on OSX or not using Homebrew, just follow the appropriate installa
 
 # Installation
 
-After you've grabbed easywpeasy and put it in the folder of your choosing, `cd` into the folder you put it in, and run `composer install`. It'll ask if you want to automatically generate and add auth and salt keys. Unless you are a masochist who likes manually entering salt keys, just say yes.
+Simply run `composer create-project shanecav/easywpeasy path/to/your/project`. This command will download easywpeasy to the location you specify, and then it will automatically run `composer install`. It will also prompt you for a couple initial configuration options:
 
-### Removing version control files & folders (optional)
-
-If you downloaded a .zip, then it shouldn't include any version control files or folders (e.g. .git, .gitignore, etc.). If you grabbed it via `git clone` or something similar, and you want to recursively delete any git files/folders in your current directory, you can use this handy little command ([source](http://montanaflynn.me/2013/03/devops/remove-all-git-files-recursively/)):
-
-	find . | grep .git | xargs rm -rf
-
-**Commands like this can be dangerous. I have used this one successfully, but use it at your own risk.**
-
-Doing this is completely optional. I find it convenient because I often want to make my project into its own git repo after installing this.
+1. It will ask if you'd like to automatically generate keys and salts for your config. Unless you have some reason you'd like to enter those manually, you should just choose yes. If you choose no, an empty file will be created at config/salts.php. You'll then need to' populate that file with the appropriate constant definitions (e.g. [https://api.wordpress.org/secret-key/1.1/salt/](https://api.wordpress.org/secret-key/1.1/salt/)).
+2. It will then ask you if you'd like to set the database connection information for your local environment. If you choose yes, you will be prompted to enter the database name, user name, user password, and database host. Otherwise, you can set this information manually in config/environments/local.php.
 
 # Configuration
 
@@ -48,8 +41,9 @@ It also includes the logic for determining which environment is currently active
 
 - If the URL contains ".local" or "local.", then it is a local environment.
 - If the URL contains "stage.", then it is a staging environment.
+- **If there are no matches, it assumes it is in a production environment.**
 
-You can adjust those terms by editing the `$environments` array in config/application.php. **If there are no matches, it assumes it is in a production environment.**
+You can adjust those terms by editing the `$environments` array in config/application.php.
 
 # Differences from a standard WordPress installation
 
@@ -58,7 +52,6 @@ If you're used to the folder structure of a standard WordPress installation, you
 1. WordPress is installed inside the "wp" folder, instead of in the root.
 2. However, the "wp-content" folder remains in the root. (There will also be a copy placed in the "wp" folder during the initial `composer install`, but that won't be used by anything, and can be deleted or ignored.)
 3. As described above, the configuration is handled through the files in the "config" folder, and not directly through wp-config.php.
-4. The "uploads" folder has been moved from inside the "wp-content" folder to the project root.
 
 Otherwise, everything should still work the same as usual. Updates to plugins, themes, and to WordPress itself should still work just fine from within the WordPress Dashboard. Alternatively, you can use the `composer update` command to update WordPress and any plugins or other dependencies, provided you've updated the composer.json file with the proper information. However, you may find that updating in this way is a little less reliable, because of the inconsistent way versioning is handled in the WordPress plugin repository.
 
@@ -103,3 +96,7 @@ I have the following plugins included in the composer.json file, because I use t
 If you want to remove or add any, just edit the composer.json before you run `composer install`.
 
 Because of the weird/inconsistent way the WordPress plugin repository does versioning, you'll probably have to update some of these from within the WordPress dashboard.
+
+## Included theme
+
+I've included [my fork of the Roots theme](https://github.com/shanecav/roots) as a requirement in composer.json. If you don't want to use it, you can ignore it, delete it, or remove it from composer.json before running `composer install`.
