@@ -24,7 +24,10 @@
     "psr-0": {"Easywpeasy\\Installer": "scripts"}
   },
   "scripts": {
-    "post-root-package-install": ["Easywpeasy\\Installer::addSalts"]
+    "post-root-package-install": [
+      "Easywpeasy\\Installer::addSalts",
+      "Easywpeasy\\Installer::configureLocalEnvironment"
+    ]
   },
   "repositories": [
     {
