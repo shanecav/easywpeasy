@@ -58,11 +58,11 @@ class Installer {
   }
 
   public static function configureLocalEnvironment(Event $event) {
+    $root = dirname(dirname(__DIR__));
+    $composer = $event->getComposer();
+    $io = $event->getIO();
+    $local_env_file_path = "{$root}/config/environments/local.php";
     if ($io->isInteractive()) {
-      $root = dirname(dirname(__DIR__));
-      $composer = $event->getComposer();
-      $io = $event->getIO();
-      $local_env_file_path = "{$root}/config/environments/local.php";
       $generate_local_env = $io->askConfirmation('<info>Would you like to enter the database connection information for your local environment now? </info> [<comment>Y,n</comment>]? ', true);
       if($generate_local_env) {
           foreach (self::$DB_CONFIG as $db_key => $db_value) {
