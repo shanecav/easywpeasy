@@ -95,7 +95,7 @@ I have the following plugins included in the composer.json file, because I use t
 - be-subpages-widget
 - better-menu-widget
 
-If you want to remove or add any, just edit the composer.json before you run `composer install`.
+If you want to remove or add any, just edit the composer.json before you run `composer install` (or `composer update`).
 
 Because of the weird/inconsistent way the WordPress plugin repository does versioning, you'll probably have to update some of these from within the WordPress dashboard after your initial install.
 
