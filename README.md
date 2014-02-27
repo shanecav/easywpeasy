@@ -20,7 +20,7 @@ If you're not on OSX or not using Homebrew, just follow the appropriate installa
 
 Simply run `composer create-project shanecav/easywpeasy path/to/your/project`. This command will download easywpeasy to the location you specify, and then it will automatically run `composer install`. It will also prompt you for a couple initial configuration options:
 
-1. It will ask if you'd like to automatically generate keys and salts for your config. Unless you have some reason you'd like to enter those manually, you should just choose yes. If you choose no, an empty file will be created at config/salts.php. You'll then need to' populate that file with the appropriate constant definitions (e.g. [https://api.wordpress.org/secret-key/1.1/salt/](https://api.wordpress.org/secret-key/1.1/salt/)).
+1. It will ask if you'd like to automatically generate keys and salts for your config. Unless you have some reason you'd like to enter those manually, you should just choose yes. If you choose no, an empty file will be created at config/salts.php and you'll need to populate that file with the appropriate constant definitions (e.g. [https://api.wordpress.org/secret-key/1.1/salt/](https://api.wordpress.org/secret-key/1.1/salt/)).
 2. It will then ask you if you'd like to set the database connection information for your local environment. If you choose yes, you will be prompted to enter the database name, user name, user password, and database host. Otherwise, you can set this information manually in config/environments/local.php.
 
 # Configuration
@@ -75,7 +75,7 @@ When you're ready to copy your local database over to a different environment, w
 
 wp-cli has tons of other good stuff, too. Check out [their site](http://wp-cli.org/) for more info.
 
-If you want, you can install wp-cli in your other environments, too. You'll have to refer to their site for instructions on how to set that up. I personally just use it locally, just to keep things simple, but there are a lot of potential benefits to using it in your other environments as well.
+If you want, you can install wp-cli in your remote environments, too. You'll have to refer to their site for instructions on how to set that up. I personally just use it locally, just to keep things simple, but there are a lot of potential benefits to using it in your other environments as well.
 
 ## Included plugins
 
@@ -95,8 +95,8 @@ I have the following plugins included in the composer.json file, because I use t
 
 If you want to remove or add any, just edit the composer.json before you run `composer install`.
 
-Because of the weird/inconsistent way the WordPress plugin repository does versioning, you'll probably have to update some of these from within the WordPress dashboard.
+Because of the weird/inconsistent way the WordPress plugin repository does versioning, you'll probably have to update some of these from within the WordPress dashboard after your initial install.
 
 ## Included theme
 
-I've included [my fork of the Roots theme](https://github.com/shanecav/roots) as a requirement in composer.json. If you don't want to use it, you can ignore it, delete it, or remove it from composer.json before running `composer install`.
+I've included [my fork of the Roots theme](https://github.com/shanecav/roots) as a requirement in composer.json, because I use it as a starter for most of my WordPress projects. If you don't want to use it, you can ignore it, delete it, or remove it from composer.json before running `composer install`.
