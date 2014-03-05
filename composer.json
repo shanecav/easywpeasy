@@ -82,7 +82,7 @@
     "wpackagist-plugin/backupwordpress": "*",
     "wpackagist-plugin/be-subpages-widget": "*",
     "wpackagist-plugin/better-menu-widget": "*",
-    "shanecav/roots": "1.0.0"
+    "shanecav/roots": "1.0.2"
   },
   "extra": {
     "installer-paths": {

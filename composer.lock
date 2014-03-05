@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "a12f22f75611045d101b14e18d4cbf3a",
+    "hash": "eba7cc325c790f4209e4c9efea291525",
     "packages": [
         {
             "name": "composer/installers",
@@ -255,10 +255,10 @@
         },
         {
             "name": "shanecav/roots",
-            "version": "1.0.0",
+            "version": "1.0.2",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/shanecav/roots/archive/1.0.0.zip",
+                "url": "https://github.com/shanecav/roots/archive/1.0.2.zip",
                 "reference": null,
                 "shasum": null
             },
