@@ -54,10 +54,10 @@
       "package": {
         "name": "shanecav/roots",
         "type": "wordpress-theme",
-        "version": "1.0.1",
+        "version": "1.0.2",
         "dist": {
           "type": "zip",
-          "url": "https://github.com/shanecav/roots/archive/1.0.1.zip"
+          "url": "https://github.com/shanecav/roots/archive/1.0.2.zip"
         },
         "require": {
           "composer/installers": "~1.0"
