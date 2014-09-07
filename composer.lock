@@ -1,30 +1,32 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
     ],
-    "hash": "eba7cc325c790f4209e4c9efea291525",
+    "hash": "ad4650067869b3664ebfac4fd0662ead",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.0.6",
+            "version": "v1.0.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "b3bd071ea114a57212c75aa6a2eef5cfe0cc798f"
+                "reference": "74fb0a7a1a23696d9c8cc2fba5903f6711cdd067"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/b3bd071ea114a57212c75aa6a2eef5cfe0cc798f",
-                "reference": "b3bd071ea114a57212c75aa6a2eef5cfe0cc798f",
+                "url": "https://api.github.com/repos/composer/installers/zipball/74fb0a7a1a23696d9c8cc2fba5903f6711cdd067",
+                "reference": "74fb0a7a1a23696d9c8cc2fba5903f6711cdd067",
                 "shasum": ""
             },
             "replace": {
+                "roundcube/plugin-installer": "*",
                 "shama/baton": "*"
             },
             "require-dev": {
                 "composer/composer": "1.0.*@dev",
-                "phpunit/phpunit": "3.7.*"
+                "phpunit/phpunit": "4.1.*"
             },
             "type": "composer-installer",
             "extra": {
@@ -46,37 +48,53 @@
                 {
                     "name": "Kyle Robinson Young",
                     "email": "kyle@dontkry.com",
-                    "homepage": "https://github.com/shama",
-                    "role": "Developer"
+                    "homepage": "https://github.com/shama"
                 }
             ],
             "description": "A multi-framework Composer library installer",
             "homepage": "http://composer.github.com/installers/",
             "keywords": [
-                "TYPO3 CMS",
-                "TYPO3 Flow",
-                "TYPO3 Neos",
+                "Craft",
+                "Dolibarr",
+                "Hurad",
+                "MODX Evo",
+                "OXID",
+                "WolfCMS",
                 "agl",
+                "annotatecms",
+                "bitrix",
                 "cakephp",
+                "chef",
                 "codeigniter",
+                "concrete5",
+                "croogo",
                 "drupal",
+                "elgg",
                 "fuelphp",
                 "installer",
                 "joomla",
                 "kohana",
                 "laravel",
-                "li3",
                 "lithium",
+                "magento",
                 "mako",
+                "mediawiki",
                 "modulework",
+                "moodle",
                 "phpbb",
+                "piwik",
                 "ppi",
+                "puppet",
+                "roundcube",
+                "shopware",
                 "silverstripe",
                 "symfony",
+                "typo3",
                 "wordpress",
-                "zend"
+                "zend",
+                "zikula"
             ],
-            "time": "2013-08-20 04:37:09"
+            "time": "2014-08-18 20:00:12"
         },
         {
             "name": "fancyguy/webroot-installer",
@@ -122,16 +140,16 @@
         },
         {
             "name": "mustache/mustache",
-            "version": "v2.5.1",
+            "version": "v2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/mustache.php.git",
-                "reference": "996c944fa2ddedddfaf0d276b913809d6a32fd85"
+                "reference": "fdf41dd673dc99b41d60992470dbae94ae0b6ba1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/996c944fa2ddedddfaf0d276b913809d6a32fd85",
-                "reference": "996c944fa2ddedddfaf0d276b913809d6a32fd85",
+                "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/fdf41dd673dc99b41d60992470dbae94ae0b6ba1",
+                "reference": "fdf41dd673dc99b41d60992470dbae94ae0b6ba1",
                 "shasum": ""
             },
             "require": {
@@ -163,7 +181,48 @@
                 "mustache",
                 "templating"
             ],
-            "time": "2014-01-09 00:36:09"
+            "time": "2014-08-26 19:50:10"
+        },
+        {
+            "name": "nb/oxymel",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nb/oxymel.git",
+                "reference": "cbe626ef55d5c4cc9b5e6e3904b395861ea76e3c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nb/oxymel/zipball/cbe626ef55d5c4cc9b5e6e3904b395861ea76e3c",
+                "reference": "cbe626ef55d5c4cc9b5e6e3904b395861ea76e3c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Oxymel": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nikolay Bachiyski",
+                    "email": "nb@nikolay.bg",
+                    "homepage": "http://extrapolate.me/"
+                }
+            ],
+            "description": "A sweet XML builder",
+            "homepage": "https://github.com/nb/oxymel",
+            "keywords": [
+                "xml"
+            ],
+            "time": "2013-02-24 15:01:54"
         },
         {
             "name": "rhumsaa/array_column",
@@ -206,16 +265,16 @@
         },
         {
             "name": "rmccue/requests",
-            "version": "v1.6.0",
+            "version": "v1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rmccue/Requests.git",
-                "reference": "756374edd59ac69268ed35481a506ebd4e732525"
+                "reference": "6aac485666c2955077d77b796bbdd25f0013a4ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rmccue/Requests/zipball/756374edd59ac69268ed35481a506ebd4e732525",
-                "reference": "756374edd59ac69268ed35481a506ebd4e732525",
+                "url": "https://api.github.com/repos/rmccue/Requests/zipball/6aac485666c2955077d77b796bbdd25f0013a4ea",
+                "reference": "6aac485666c2955077d77b796bbdd25f0013a4ea",
                 "shasum": ""
             },
             "require": {
@@ -251,7 +310,7 @@
                 "iri",
                 "sockets"
             ],
-            "time": "2013-10-06 13:30:32"
+            "time": "2014-05-18 04:59:02"
         },
         {
             "name": "shanecav/roots",
@@ -269,17 +328,17 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v2.4.2",
+            "version": "v2.5.4",
             "target-dir": "Symfony/Component/Finder",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Finder.git",
-                "reference": "b6735d1fc16da13c4c7dddfe78366a4a098cf011"
+                "reference": "f40854d1a19c339c7f969f8f6d6d6e9153311c4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Finder/zipball/b6735d1fc16da13c4c7dddfe78366a4a098cf011",
-                "reference": "b6735d1fc16da13c4c7dddfe78366a4a098cf011",
+                "url": "https://api.github.com/repos/symfony/Finder/zipball/f40854d1a19c339c7f969f8f6d6d6e9153311c4c",
+                "reference": "f40854d1a19c339c7f969f8f6d6d6e9153311c4c",
                 "shasum": ""
             },
             "require": {
@@ -288,7 +347,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.4-dev"
+                    "dev-master": "2.5-dev"
                 }
             },
             "autoload": {
@@ -302,26 +361,24 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
-                },
-                {
                     "name": "Symfony Community",
                     "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "Symfony Finder Component",
             "homepage": "http://symfony.com",
-            "time": "2014-01-07 13:28:54"
+            "time": "2014-09-03 09:00:14"
         },
         {
             "name": "wordpress",
-            "version": "3.8.1",
+            "version": "4.0",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/WordPress/WordPress/archive/3.8.1.zip",
+                "url": "https://github.com/WordPress/WordPress/archive/4.0.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -332,16 +389,16 @@
         },
         {
             "name": "wp-cli/php-cli-tools",
-            "version": "v0.9.3",
+            "version": "v0.9.4-patch46",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/php-cli-tools.git",
-                "reference": "339f50279cc7494b87343689ef664896bd5b5dc1"
+                "reference": "02d5ed4cdbab911df91bf06062c8b2705fb0919a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/php-cli-tools/zipball/339f50279cc7494b87343689ef664896bd5b5dc1",
-                "reference": "339f50279cc7494b87343689ef664896bd5b5dc1",
+                "url": "https://api.github.com/repos/wp-cli/php-cli-tools/zipball/02d5ed4cdbab911df91bf06062c8b2705fb0919a",
+                "reference": "02d5ed4cdbab911df91bf06062c8b2705fb0919a",
                 "shasum": ""
             },
             "require": {
@@ -373,29 +430,34 @@
                 "cli",
                 "console"
             ],
-            "time": "2013-06-14 16:35:34"
+            "time": "2014-02-01 23:11:00"
         },
         {
             "name": "wp-cli/wp-cli",
-            "version": "v0.13.0",
+            "version": "v0.15.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/wp-cli.git",
-                "reference": "a7eaaecc62b8f5004cdf3b32273ed04884cbca2a"
+                "reference": "3ac507f2d17e18a4be97a5763c0f1d0514c2a13c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/wp-cli/zipball/a7eaaecc62b8f5004cdf3b32273ed04884cbca2a",
-                "reference": "a7eaaecc62b8f5004cdf3b32273ed04884cbca2a",
+                "url": "https://api.github.com/repos/wp-cli/wp-cli/zipball/3ac507f2d17e18a4be97a5763c0f1d0514c2a13c",
+                "reference": "3ac507f2d17e18a4be97a5763c0f1d0514c2a13c",
                 "shasum": ""
             },
             "require": {
                 "mustache/mustache": "~2.4",
+                "nb/oxymel": "0.1.0",
                 "php": ">=5.3.2",
                 "rhumsaa/array_column": "~1.1",
                 "rmccue/requests": "~1.6",
                 "symfony/finder": "~2.3",
-                "wp-cli/php-cli-tools": "0.9.3"
+                "wp-cli/php-cli-tools": "0.9.4-patch46"
+            },
+            "require-dev": {
+                "behat/behat": "2.5.*",
+                "phpunit/phpunit": "3.7.*"
             },
             "suggest": {
                 "psy/psysh": "Enhanced `wp shell` functionality"
@@ -411,6 +473,9 @@
                 },
                 "files": [
                     "php/Spyc.php"
+                ],
+                "classmap": [
+                    "php/export"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -423,7 +488,7 @@
                 "cli",
                 "wordpress"
             ],
-            "time": "2013-11-30 13:14:44"
+            "time": "2014-05-14 23:36:21"
         },
         {
             "name": "wpackagist-plugin/admin-menu-tree-page-view",
@@ -450,7 +515,7 @@
         },
         {
             "name": "wpackagist-plugin/advanced-custom-fields",
-            "version": "4.3.4",
+            "version": "4.3.8",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/advanced-custom-fields/",
@@ -541,16 +606,39 @@
             "homepage": "http://wordpress.org/plugins/better-menu-widget/"
         },
         {
-            "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "0.8.2",
+            "name": "wpackagist-plugin/bootstrap-3-shortcodes",
+            "version": "3.2.3",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/0.8.2"
+                "url": "http://plugins.svn.wordpress.org/bootstrap-3-shortcodes/",
+                "reference": "tags/3.2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/custom-post-type-ui.0.8.2.zip",
+                "url": "http://downloads.wordpress.org/plugin/bootstrap-3-shortcodes.3.2.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/bootstrap-3-shortcodes": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/bootstrap-3-shortcodes/"
+        },
+        {
+            "name": "wpackagist-plugin/custom-post-type-ui",
+            "version": "0.8.3",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/custom-post-type-ui/",
+                "reference": "tags/0.8.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/custom-post-type-ui.0.8.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -562,29 +650,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/custom-post-type-ui/"
-        },
-        {
-            "name": "wpackagist-plugin/easy-bootstrap-shortcodes",
-            "version": "3.7",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/easy-bootstrap-shortcodes/",
-                "reference": "tags/3.7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/easy-bootstrap-shortcodes.3.7.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "replace": {
-                "wpackagist/easy-bootstrap-shortcodes": "self.version"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/easy-bootstrap-shortcodes/"
         },
         {
             "name": "wpackagist-plugin/post-types-order",
@@ -657,15 +722,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "1.4.25",
+            "version": "1.5.5.3",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/1.4.25"
+                "reference": "tags/1.5.5.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.4.25.zip",
+                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.5.5.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -689,6 +754,7 @@
     "stability-flags": [
 
     ],
+    "prefer-stable": false,
     "platform": {
         "php": ">=5.3.2"
     },
