@@ -57,7 +57,7 @@ If you're used to the folder structure of a standard WordPress installation, you
 
 Otherwise, everything should still work the same as usual. Updates to plugins, themes, and to WordPress itself should still work just fine from within the WordPress Dashboard. Alternatively, you can use the `composer update` command to update WordPress and any plugins or other dependencies, provided you've updated the composer.json file with the proper information. However, you may find that updating in this way is a little less reliable, because of the inconsistent way versioning is handled in the WordPress plugin repository.
 
-# Extra included stuff
+# Extra stuff
 
 ## wp-cli
 
@@ -73,7 +73,7 @@ wp-cli has tons of other good stuff, too. Check out [their site](http://wp-cli.o
 
 I have the following plugins included in the composer.json file, because I use them on pretty much everything:
 
-- advanced-custom-fields
+- Not included as a dependency because it's a commercial plugin, but I **strongly** recommend [Advanced Custom Fields Pro](http://www.advancedcustomfields.com/pro)
 - wordpress-seo
 - admin-menu-tree-page-view
 - custom-post-type-ui
