@@ -61,23 +61,13 @@ Otherwise, everything should still work the same as usual. Updates to plugins, t
 
 ## wp-cli
 
-By default, [wp-cli](http://wp-cli.org/) is included as a dependency in the composer.json. It's not really required, but it is awesome. If you don't already use it, there are a few little steps to get it working on your local machine:
+I really recommend installing [wp-cli](http://wp-cli.org/). It only takes a second, and makes setting up new WordPress installs even faster.
 
-In order to use `wp` as a command in the shell from your project root, add the following to your .bash_profile:
-
-	alias wp="./vendor/bin/wp"
-
-If you're using MAMP, you'll also have to add the following line to your .bash_profile to make sure wp-cli is using MAMP's version of php (you can change the version number here as necessary, depending on what you have):
-
-	export WP_CLI_PHP=/Applications/MAMP/bin/php/php5.4.10/bin/php
-
-After you've set all that, you can run `wp db create` and it'll create a db based on the database info you set in your config files (of course, you'll need to have entered an existing mysql user/password with the proper database creation privileges). Now you're all set to go through the standard WordPress initial installation process. Remember that because WordPress is installed in the "wp" directory, you'll need to visit yourproject.com/**wp**/wp-admin/install.php.
+If you have wpl-cli installed prior to using easywpeasy, you can cd into your newly created project's folder and run `wp db create` and it'll create a db based on the database info you set in your config files (of course, you'll need to have entered an existing mysql user/password with the proper database creation privileges). Now you're all set to go through the standard WordPress initial installation process. Remember that because WordPress is installed in the "wp" directory, you'll need to visit yourproject.com/**wp**/wp-admin/install.php.
 
 When you're ready to copy your local database over to a different environment, wp-cli can help with that, too: Just use the `wp db export yourfilename.sql` command from your project root. This will place an SQL dump of your current environment's WordPress database in your project's root (of course you should change "yourfilename.sql" to whatever you want).
 
 wp-cli has tons of other good stuff, too. Check out [their site](http://wp-cli.org/) for more info.
-
-If you want, you can install wp-cli in your remote environments, too. You'll have to refer to their site for instructions on how to set that up. I personally just use it locally, just to keep things simple, but there are a lot of potential benefits to using it in your other environments as well.
 
 ## Included plugins
 
