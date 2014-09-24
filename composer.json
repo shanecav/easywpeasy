@@ -70,8 +70,6 @@
     "wordpress": "4.0",
     "fancyguy/webroot-installer": "1.1.0",
     "composer/installers": "~1.0",
-    "wp-cli/wp-cli": "v0.15.1",
-    "wpackagist-plugin/advanced-custom-fields": "*",
     "wpackagist-plugin/wordpress-seo": "*",
     "wpackagist-plugin/admin-menu-tree-page-view": "*",
     "wpackagist-plugin/custom-post-type-ui": "*",
@@ -82,6 +80,7 @@
     "wpackagist-plugin/backupwordpress": "*",
     "wpackagist-plugin/be-subpages-widget": "*",
     "wpackagist-plugin/better-menu-widget": "*",
+    "wpackagist-plugin/regenerate-thumbnails": "*",
     "shanecav/roots": "1.0.2"
   },
   "extra": {
