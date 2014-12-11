@@ -84,11 +84,8 @@ I have the following plugins included in the composer.json file, because I use t
 - backupwordpress
 - be-subpages-widget
 - better-menu-widget
+- WP Sync DB
 
 If you want to remove or add any, just edit the composer.json before you run `composer install` (or `composer update`).
 
 Because of the weird/inconsistent way the WordPress plugin repository does versioning, you'll probably have to update some of these from within the WordPress dashboard after your initial install.
-
-## Included theme
-
-I've included [my fork of the Roots theme](https://github.com/shanecav/roots) as a requirement in composer.json, because I use it as a starter for most of my WordPress projects. If you don't want to use it, you can ignore it, delete it, or remove it from composer.json before running `composer install`.
