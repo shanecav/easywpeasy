@@ -39,10 +39,10 @@
       "package": {
         "name": "wordpress",
         "type": "webroot",
-        "version": "4.0",
+        "version": "4.0.1",
         "dist": {
           "type": "zip",
-          "url": "https://github.com/WordPress/WordPress/archive/4.0.zip"
+          "url": "https://github.com/WordPress/WordPress/archive/4.0.1.zip"
         },
         "require": {
           "fancyguy/webroot-installer": "1.1.0"
@@ -52,12 +52,12 @@
     {
       "type": "package",
       "package": {
-        "name": "shanecav/roots",
-        "type": "wordpress-theme",
-        "version": "1.0.2",
+        "name": "wp-sync-db",
+        "type": "wordpress-plugin",
+        "version": "1.5",
         "dist": {
           "type": "zip",
-          "url": "https://github.com/shanecav/roots/archive/1.0.2.zip"
+          "url": "https://github.com/wp-sync-db/wp-sync-db/archive/1.5.zip"
         },
         "require": {
           "composer/installers": "~1.0"
@@ -67,7 +67,7 @@
   ],
   "require": {
     "php": ">=5.3.2",
-    "wordpress": "4.0",
+    "wordpress": "4.0.1",
     "fancyguy/webroot-installer": "1.1.0",
     "composer/installers": "~1.0",
     "wpackagist-plugin/wordpress-seo": "*",
@@ -81,7 +81,8 @@
     "wpackagist-plugin/be-subpages-widget": "*",
     "wpackagist-plugin/better-menu-widget": "*",
     "wpackagist-plugin/regenerate-thumbnails": "*",
-    "shanecav/roots": "1.0.2"
+    "wpackagist-plugin/white-label-cms": "*",
+    "wp-sync-db": "~1.5"
   },
   "extra": {
     "installer-paths": {

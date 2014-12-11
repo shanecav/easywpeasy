@@ -4,20 +4,20 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8d60fd8c24725e03160e02b243c623fd",
+    "hash": "d2897cd9ab1cde3e4fc23dc3569b83a2",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.0.18",
+            "version": "v1.0.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "74fb0a7a1a23696d9c8cc2fba5903f6711cdd067"
+                "reference": "89d77bfbee79e16653f7162c86e602cc188471db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/74fb0a7a1a23696d9c8cc2fba5903f6711cdd067",
-                "reference": "74fb0a7a1a23696d9c8cc2fba5903f6711cdd067",
+                "url": "https://api.github.com/repos/composer/installers/zipball/89d77bfbee79e16653f7162c86e602cc188471db",
+                "reference": "89d77bfbee79e16653f7162c86e602cc188471db",
                 "shasum": ""
             },
             "replace": {
@@ -59,6 +59,7 @@
                 "Hurad",
                 "MODX Evo",
                 "OXID",
+                "Thelia",
                 "WolfCMS",
                 "agl",
                 "annotatecms",
@@ -68,9 +69,11 @@
                 "codeigniter",
                 "concrete5",
                 "croogo",
+                "dokuwiki",
                 "drupal",
                 "elgg",
                 "fuelphp",
+                "grav",
                 "installer",
                 "joomla",
                 "kohana",
@@ -94,7 +97,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2014-08-18 20:00:12"
+            "time": "2014-11-29 01:29:17"
         },
         {
             "name": "fancyguy/webroot-installer",
@@ -139,25 +142,11 @@
             "time": "2013-03-15 17:51:14"
         },
         {
-            "name": "shanecav/roots",
-            "version": "1.0.2",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/shanecav/roots/archive/1.0.2.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-theme"
-        },
-        {
             "name": "wordpress",
-            "version": "4.0",
+            "version": "4.0.1",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/WordPress/WordPress/archive/4.0.zip",
+                "url": "https://github.com/WordPress/WordPress/archive/4.0.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -167,16 +156,30 @@
             "type": "webroot"
         },
         {
+            "name": "wp-sync-db",
+            "version": "1.5",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/wp-sync-db/wp-sync-db/archive/1.5.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin"
+        },
+        {
             "name": "wpackagist-plugin/admin-menu-tree-page-view",
-            "version": "2.6.8",
+            "version": "2.6.9",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/admin-menu-tree-page-view/",
-                "reference": "tags/2.6.8"
+                "reference": "tags/2.6.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/admin-menu-tree-page-view.2.6.8.zip",
+                "url": "http://downloads.wordpress.org/plugin/admin-menu-tree-page-view.2.6.9.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -191,15 +194,15 @@
         },
         {
             "name": "wpackagist-plugin/backupwordpress",
-            "version": "2.6.2",
+            "version": "3.0.4",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/backupwordpress/",
-                "reference": "tags/2.6.2"
+                "reference": "tags/3.0.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/backupwordpress.2.6.2.zip",
+                "url": "http://downloads.wordpress.org/plugin/backupwordpress.3.0.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -260,15 +263,15 @@
         },
         {
             "name": "wpackagist-plugin/bootstrap-3-shortcodes",
-            "version": "3.2.4",
+            "version": "3.3.4",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/bootstrap-3-shortcodes/",
-                "reference": "tags/3.2.4"
+                "reference": "tags/3.3.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/bootstrap-3-shortcodes.3.2.4.zip",
+                "url": "http://downloads.wordpress.org/plugin/bootstrap-3-shortcodes.3.3.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -283,15 +286,15 @@
         },
         {
             "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "0.8.4",
+            "version": "0.8.5",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/0.8.4"
+                "reference": "tags/0.8.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/custom-post-type-ui.0.8.4.zip",
+                "url": "http://downloads.wordpress.org/plugin/custom-post-type-ui.0.8.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -375,15 +378,15 @@
         },
         {
             "name": "wpackagist-plugin/simple-page-ordering",
-            "version": "2.2.2",
+            "version": "2.2.3",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/simple-page-ordering/",
-                "reference": "tags/2.2.2"
+                "reference": "tags/2.2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/simple-page-ordering.2.2.2.zip",
+                "url": "http://downloads.wordpress.org/plugin/simple-page-ordering.2.2.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -397,16 +400,39 @@
             "homepage": "http://wordpress.org/plugins/simple-page-ordering/"
         },
         {
-            "name": "wpackagist-plugin/wordpress-seo",
-            "version": "1.6.1",
+            "name": "wpackagist-plugin/white-label-cms",
+            "version": "1.5.2",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/1.6.1"
+                "url": "http://plugins.svn.wordpress.org/white-label-cms/",
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.6.1.zip",
+                "url": "http://downloads.wordpress.org/plugin/white-label-cms.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/white-label-cms": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/white-label-cms/"
+        },
+        {
+            "name": "wpackagist-plugin/wordpress-seo",
+            "version": "1.7.1",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
+                "reference": "tags/1.7.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.7.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -420,21 +446,13 @@
             "homepage": "http://wordpress.org/plugins/wordpress-seo/"
         }
     ],
-    "packages-dev": [
-
-    ],
-    "aliases": [
-
-    ],
+    "packages-dev": [],
+    "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": [],
     "prefer-stable": false,
     "platform": {
         "php": ">=5.3.2"
     },
-    "platform-dev": [
-
-    ]
+    "platform-dev": []
 }
