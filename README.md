@@ -84,6 +84,7 @@ I have the following plugins included in the composer.json file, because I use t
 - backupwordpress
 - be-subpages-widget
 - better-menu-widget
+- WP Mail SMTP
 - WP Sync DB
 
 If you want to remove or add any, just edit the composer.json before you run `composer install` (or `composer update`).
