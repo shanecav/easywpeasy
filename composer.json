@@ -82,6 +82,7 @@
     "wpackagist-plugin/better-menu-widget": "*",
     "wpackagist-plugin/regenerate-thumbnails": "*",
     "wpackagist-plugin/white-label-cms": "*",
+    "wpackagist-plugin/wp-mail-smtp": "*",
     "wp-sync-db": "~1.5"
   },
   "extra": {
