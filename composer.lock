@@ -4,20 +4,20 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3dd6982bee318f17306fa35f536f4cf4",
+    "hash": "5081d0b055c3733a32b149ea3d236343",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.0.19",
+            "version": "v1.0.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "89d77bfbee79e16653f7162c86e602cc188471db"
+                "reference": "1bff8aa77a18f3616f468ed8000cf86a5725bac3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/89d77bfbee79e16653f7162c86e602cc188471db",
-                "reference": "89d77bfbee79e16653f7162c86e602cc188471db",
+                "url": "https://api.github.com/repos/composer/installers/zipball/1bff8aa77a18f3616f468ed8000cf86a5725bac3",
+                "reference": "1bff8aa77a18f3616f468ed8000cf86a5725bac3",
                 "shasum": ""
             },
             "replace": {
@@ -59,6 +59,7 @@
                 "Hurad",
                 "MODX Evo",
                 "OXID",
+                "SMF",
                 "Thelia",
                 "WolfCMS",
                 "agl",
@@ -97,7 +98,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2014-11-29 01:29:17"
+            "time": "2015-01-11 03:51:11"
         },
         {
             "name": "fancyguy/webroot-installer",
@@ -143,10 +144,10 @@
         },
         {
             "name": "wordpress",
-            "version": "4.0.1",
+            "version": "4.1",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/WordPress/WordPress/archive/4.0.1.zip",
+                "url": "https://github.com/WordPress/WordPress/archive/4.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -161,6 +162,20 @@
             "dist": {
                 "type": "zip",
                 "url": "https://github.com/wp-sync-db/wp-sync-db/archive/1.5.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin"
+        },
+        {
+            "name": "wp-sync-db-media-files",
+            "version": "1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/wp-sync-db/wp-sync-db-media-files/archive/master.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -194,26 +209,23 @@
         },
         {
             "name": "wpackagist-plugin/backupwordpress",
-            "version": "3.0.4",
+            "version": "3.1.2",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/backupwordpress/",
-                "reference": "tags/3.0.4"
+                "reference": "tags/3.1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/backupwordpress.3.0.4.zip",
+                "url": "http://downloads.wordpress.org/plugin/backupwordpress.3.1.2.zip",
                 "reference": null,
                 "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"
             },
-            "replace": {
-                "wpackagist/backupwordpress": "self.version"
-            },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/backupwordpress/"
+            "homepage": "https://wordpress.org/plugins/backupwordpress/"
         },
         {
             "name": "wpackagist-plugin/be-subpages-widget",
@@ -263,49 +275,43 @@
         },
         {
             "name": "wpackagist-plugin/bootstrap-3-shortcodes",
-            "version": "3.3.4",
+            "version": "3.3.5",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/bootstrap-3-shortcodes/",
-                "reference": "tags/3.3.4"
+                "reference": "tags/3.3.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/bootstrap-3-shortcodes.3.3.4.zip",
+                "url": "http://downloads.wordpress.org/plugin/bootstrap-3-shortcodes.3.3.5.zip",
                 "reference": null,
                 "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"
             },
-            "replace": {
-                "wpackagist/bootstrap-3-shortcodes": "self.version"
-            },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/bootstrap-3-shortcodes/"
+            "homepage": "https://wordpress.org/plugins/bootstrap-3-shortcodes/"
         },
         {
             "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "0.8.5",
+            "version": "0.9.5",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/0.8.5"
+                "reference": "tags/0.9.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/custom-post-type-ui.0.8.5.zip",
+                "url": "http://downloads.wordpress.org/plugin/custom-post-type-ui.0.9.5.zip",
                 "reference": null,
                 "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"
             },
-            "replace": {
-                "wpackagist/custom-post-type-ui": "self.version"
-            },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/custom-post-type-ui/"
+            "homepage": "https://wordpress.org/plugins/custom-post-type-ui/"
         },
         {
             "name": "wpackagist-plugin/post-types-order",
