@@ -31,7 +31,7 @@ All of the WordPress configuration can be done via the files in the "config" fol
 
 ### Environment-specific configuration
 
-The files located in the "config/environments" folder control the environment specific settings (primarily the database connection info). By default, it includes local-sample.php, stage.php, and production.php. You can add more if you'd like, just be sure to add them to the `$environments` array in config/application.php.
+The files located in the "config/environments" folder control the environment specific settings (primarily the database connection info). By default, it includes local.php, stage.php, and production.php. You can add more if you'd like, just be sure to add them to the `$environments` array in config/application.php.
 
 You'll see a ".gitignore-sample" file in the project root. It only contains one item to ignore: "config/environments/local.php". I recommend ignoring this file in your project if you're working with other developers, that way you're not sharing your local username and password (and other devs can have their own un-shared version of "local.php").
 
