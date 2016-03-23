@@ -32,17 +32,17 @@
   "repositories": [
     {
       "type": "composer",
-      "url": "http://wpackagist.org"
+      "url": "https://wpackagist.org"
     },
     {
       "type": "package",
       "package": {
         "name": "wordpress",
         "type": "webroot",
-        "version": "4.1",
+        "version": "4.4.2",
         "dist": {
           "type": "zip",
-          "url": "https://github.com/WordPress/WordPress/archive/4.1.zip"
+          "url": "https://github.com/WordPress/WordPress/archive/4.4.2.zip"
         },
         "require": {
           "fancyguy/webroot-installer": "1.1.0"
@@ -69,20 +69,20 @@
       "package": {
         "name": "wp-sync-db-media-files",
         "type": "wordpress-plugin",
-        "version": "1.0",
+        "version": "1.1.5",
         "dist": {
           "type": "zip",
-          "url": "https://github.com/wp-sync-db/wp-sync-db-media-files/archive/master.zip"
+          "url": "https://github.com/wp-sync-db/wp-sync-db-media-files/archive/1.1.5.zip"
         },
         "require": {
-          "composer/installers": "~1.0"
+          "composer/installers": "~1.1.5"
         }
       }
     }
   ],
   "require": {
     "php": ">=5.3.2",
-    "wordpress": "4.1",
+    "wordpress": "4.4.2",
     "fancyguy/webroot-installer": "1.1.0",
     "composer/installers": "~1.0",
     "wpackagist-plugin/wordpress-seo": "*",
@@ -99,7 +99,7 @@
     "wpackagist-plugin/white-label-cms": "*",
     "wpackagist-plugin/wp-mail-smtp": "*",
     "wp-sync-db": "~1.5",
-    "wp-sync-db-media-files": "1.0"
+    "wp-sync-db-media-files": "1.1.5"
   },
   "extra": {
     "installer-paths": {
