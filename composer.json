@@ -75,7 +75,7 @@
           "url": "https://github.com/wp-sync-db/wp-sync-db-media-files/archive/1.1.5.zip"
         },
         "require": {
-          "composer/installers": "~1.1.5"
+          "composer/installers": "~1.0"
         }
       }
     }
